@@ -1,0 +1,53 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .label{
+        @apply block px-2 uppercase  text-white text-xs;
+    }
+    .input{
+        @apply focus:outline-none w-full px-2 py-2 rounded my-2  shadow-md;
+    }
+    .form{
+        @apply bg-emerald-700 p-3 rounded shadow-md md:max-w-lg my-3 md:my-5 mx-7 max-w-sm md:mx-auto;
+    }
+    .btn{
+        @apply bg-emerald-600 p-2 rounded shadow-lg text-sm uppercase font-semibold text-white cursor-pointer w-full hover:bg-emerald-900 hover:text-white;
+    }
+    .name{
+        @apply  font-semibold uppercase text-slate-800; 
+    }
+    .title{
+        @apply text-sm font-semibold ;
+    }
+    .transpo{
+        @apply font-semibold text-sm uppercase text-slate-600 ;
+    }
+    .contact{
+        @apply text-sm font-semibold uppercase text-slate-600;
+    }
+    .list{
+        @apply bg-white shadow-md rounded-lg  px-3 md:py-4 py-2 flex justify-between items-center;
+    }
+    .btn-sec{
+        @apply p-2 bg-emerald-800 rounded-lg text-white text-xs cursor-pointer uppercase ;
+    }
+    .icon{
+        @apply bg-black p-2 rounded-full text-white;
+    }
+    .list-wrap{
+        @apply flex justify-between items-center;
+    }
+    .link{
+        @apply hidden md:block space-x-3 text-sm font-semibold;
+    }
+    .link-sec{
+        @apply space-x-3 text-sm font-semibold;
+    }
+    .nav{
+        @apply text-emerald-900 flex justify-between items-center py-2;
+    }
+}
