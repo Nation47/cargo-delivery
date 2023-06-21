@@ -25,7 +25,7 @@ const Login = ({setToken}) => {
                 toast.success('Successful login')
                 setError(null);
                 setToken(data)
-                navigate('/')
+                navigate('/home')
                 
             }
         console.log(password, email);

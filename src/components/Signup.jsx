@@ -36,7 +36,7 @@ const Signup = () => {
             } else{
                 toast.success('Account Created')
                 setError(null);
-                navigate('/')
+                navigate('/home')
 
             }
 
