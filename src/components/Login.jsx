@@ -28,7 +28,6 @@ const Login = ({setToken}) => {
                 navigate('/home')
                 
             }
-        console.log(password, email);
     }
 
     

@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = ({token}) => {
+   const navigate = useNavigate();
+
+    const Logout = () => {
+        sessionStorage.removeItem('token');
+        navigate('/login')
+        toast.success('Logging Out successfully')
+    }
     return (
         <>
             <div>
@@ -11,6 +19,7 @@ const Home = ({token}) => {
                     <li ><Link to='/login' className="btn-sec">login</Link></li>
                     <li ><Link to='/signup' className="btn-sec">signup</Link></li>
                 </ul>
+                <button className="btn-sec" onClick={Logout}>logout</button>
             </div>
         </>
     );

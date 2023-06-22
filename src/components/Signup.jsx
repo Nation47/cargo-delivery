@@ -34,9 +34,9 @@ const Signup = () => {
             if(error){
                 toast.error('failed to sign up')
             } else{
-                toast.success('Account Created')
+                toast.success('Account Created, login with your email and password')
                 setError(null);
-                navigate('/home')
+                navigate('/login')
 
             }
 
