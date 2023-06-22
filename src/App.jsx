@@ -28,8 +28,10 @@ function App() {
           <Toaster />
           <Routes>
             <Route element={<Navbar />}>
-              <Route path='/login' element={<Login setToken={setToken} /> } />
-              <Route path='/signup' element={<Signup />} />
+              {!token &&
+              <Route path='/login' element={<Login setToken={setToken} /> } />}
+              {!token &&
+              <Route path='/signup' element={<Signup />} />}
               {token? <Route path='/home' element={<Home token={token} />} />:""}
               <Route path='/' element={<Landing />} />
             </Route>
