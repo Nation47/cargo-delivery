@@ -2,8 +2,23 @@ import { NavLink, Outlet } from "react-router-dom";
 import supabase from "../config/Supabase";
 
 export default async function Navbar() {
-    const user = await supabase.auth.getUser();
-    if(user)
+    const [useri,setUser]=useState()
+    useEffect(()=>{
+   async function getUser(){
+    const {data:{user}} = await supabase.auth.getUser();
+    if(user){
+        setUser(user);
+    }
+    else{
+        setUser(null);
+    }
+   }
+   getUser()
+    }
+   
+    ,[])
+    
+    if(useri)
     return( <>
         <nav className="nav">
             <h1 className="ml-3">Cargodel</h1>
@@ -15,7 +30,7 @@ export default async function Navbar() {
         </nav>
         <Outlet />
     </>)
-    if(!user)
+    else{
     return (
         <>
             <nav className="nav">
@@ -33,5 +48,6 @@ export default async function Navbar() {
             <Outlet />
         </>
     );
+    }
 }
  
