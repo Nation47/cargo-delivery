@@ -51,13 +51,12 @@ const Signup = () => {
     return (
         <>
             <div>
-                <h3 className="text-sm text-emerald-600 text-center mt-4">Signup now if you don't have an account</h3>
                 <form className="form" onSubmit={handleSignup}>
                     <label htmlFor="fullname" className="label">Full name</label>
                     <input
                          type="text" 
                          className="input"
-                         placeholder="full name"
+                         placeholder="eg: Jane Doe"
                          value={name}
                          onChange={(e) => setName(e.target.value)}
                     />
@@ -65,7 +64,7 @@ const Signup = () => {
                     <input
                          type="email" 
                          className="input"
-                         placeholder="email"
+                         placeholder="example@email.com"
                          value={email}
                          onChange={(e) => setEmail(e.target.value)}
                     />
@@ -74,7 +73,7 @@ const Signup = () => {
                     <input
                          type="text" 
                          className="input"
-                         placeholder="phone number"
+                         placeholder="eg: XXX XXX XXX XXX"
                          value={phone}
                          onChange={(e) => setPhone(e.target.value)}
                     />
@@ -86,7 +85,7 @@ const Signup = () => {
                         <option value="driver"  >Driver</option>
                     </select>
 
-                    <label htmlFor="fullname" className="label">password</label>
+                    <label htmlFor="password" className="label">password</label>
                     <input
                          type="password" 
                          className="input"
@@ -96,7 +95,7 @@ const Signup = () => {
                     />
                     <button className="btn">signup</button>
                 </form>
-                <h2 className="text-center text-sm   text-white">Don't have an account ? <Link to='/login'>Login now</Link></h2> 
+                <h2 className="text-center text-sm   text-white">Have an account ? <Link to='/login'>Login now</Link></h2> 
             </div>
         </>
     );

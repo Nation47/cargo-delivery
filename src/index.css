@@ -9,10 +9,10 @@
         @apply block px-2 uppercase  text-white text-xs;
     }
     .input{
-        @apply focus:outline-none w-full px-2 py-2 rounded my-2  shadow-md;
+        @apply focus:outline-none w-full px-3 py-2 rounded my-2  shadow-md;
     }
     .form{
-        @apply bg-emerald-700 p-3 rounded shadow-md md:max-w-lg my-3 md:my-5 mx-7 max-w-sm md:mx-auto;
+        @apply bg-emerald-700 p-3 rounded shadow-md md:max-w-lg my-3 md:my-5 mx-auto max-w-xl md:mx-auto;
     }
     .btn{
         @apply bg-emerald-600 p-2 rounded shadow-lg text-sm uppercase font-semibold text-white cursor-pointer w-full hover:bg-emerald-900 hover:text-white;
@@ -35,6 +35,9 @@
     .btn-sec{
         @apply p-2 bg-emerald-800 rounded-lg text-white text-xs cursor-pointer uppercase ;
     }
+    .btn-pri{
+        @apply  bg-white rounded text-emerald-800 shadow-md px-2 font-semibold text-xs cursor-pointer uppercase ;
+    }
     .icon{
         @apply bg-black p-2 rounded-full text-white;
     }
@@ -45,9 +48,9 @@
         @apply hidden md:block space-x-3 text-sm font-semibold;
     }
     .link-sec{
-        @apply space-x-3 text-sm font-semibold;
+        @apply space-x-3 text-sm font-semibold ;
     }
     .nav{
-        @apply text-emerald-900 flex justify-between items-center py-2;
+        @apply text-emerald-900 bg-white flex justify-between items-center py-1 uppercase;
     }
 }

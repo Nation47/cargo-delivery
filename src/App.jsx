@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Landing from './pages/Landing';
+import Navbar from './components/Navbar';
 
 function App() {
   const [token, setToken] = useState(false);
@@ -23,13 +24,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className='bg-emerald-600 py-4'>
+        <div className='bg-emerald-600 h-screen'>
           <Toaster />
           <Routes>
-            <Route path='/login' element={<Login setToken={setToken} /> } />
-            <Route path='/signup' element={<Signup />} />
-            {token? <Route path='/home' element={<Home token={token} />} />:""}
-            <Route path='/' element={<Landing />} />
+            <Route element={<Navbar />}>
+              <Route path='/login' element={<Login setToken={setToken} /> } />
+              <Route path='/signup' element={<Signup />} />
+              {token? <Route path='/home' element={<Home token={token} />} />:""}
+              <Route path='/' element={<Landing />} />
+            </Route>
           </Routes>
         </div>
       </BrowserRouter>

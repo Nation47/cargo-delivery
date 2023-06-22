@@ -42,7 +42,7 @@ const Login = ({setToken}) => {
                     <input 
                         type="email" 
                         className="input"
-                        placeholder="Email"
+                        placeholder="example@email.com"
                         required
                         value={email}
                         onChange={(e) =>setEmail(e.target.value)}
@@ -59,7 +59,7 @@ const Login = ({setToken}) => {
                     />
                     <button className="btn">Login </button>
                 </form>
-                <h2 className="text-center text-sm   text-white">Don't have an account ? <Link to='/signup'>Sign-Up now</Link></h2> 
+                <h2 className="text-center text-sm   text-white">New here? <Link to='/signup'>Sign-Up now</Link></h2> 
             </div>
         </>
     );
