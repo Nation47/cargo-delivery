@@ -29,8 +29,6 @@ const Login = ({setToken}) => {
                 
             }
     }
-
-    
   
     return (
         <>
