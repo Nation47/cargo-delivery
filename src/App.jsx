@@ -26,7 +26,7 @@ function App() {
       <BrowserRouter>
         <div className='bg-emerald-600 h-screen'>
           <Toaster />
-          <Routes>
+          <Routes>           
             <Route element={<Navbar />}>
               {!token &&
               <Route path='/login' element={<Login setToken={setToken} /> } />}
