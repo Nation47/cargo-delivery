@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Landing from './pages/Landing';
 import Navbar from './components/Navbar';
+import Requests from './components/Requests';
 
 function App() {
   const [token, setToken] = useState(false);
@@ -34,6 +35,7 @@ function App() {
               <Route path='/signup' element={<Signup />} />}
               {token? <Route path='/home' element={<Home token={token} />} />:""}
               <Route path='/' element={<Landing />} />
+              <Route path='requests' element={<Requests />} />
             </Route>
           </Routes>
         </div>
