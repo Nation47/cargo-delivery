@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className='bg-emerald-600 h-screen'>
+        <div className='bg-emerald-600 font-body h-screen'>
           <Toaster />
           <Routes>           
             <Route element={<Navbar />}>

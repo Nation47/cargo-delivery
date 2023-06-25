@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import supabase from "../config/Supabase";
 import { toast } from "react-hot-toast";
+import { MdAlternateEmail } from "react-icons/md";
 
 const Login = ({setToken}) => {
     const [password, setPassword] = useState('');

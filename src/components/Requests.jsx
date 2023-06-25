@@ -14,7 +14,7 @@ const Requests = () => {
 
         const {error} = await supabase
             .from('request')
-            .insert([{cargoLocation, delivery}]);
+            .insert({cargoLocation, delivery});
 
             if(error){
                 toast.error(' failed to request!');
