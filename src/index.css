@@ -53,6 +53,6 @@
         @apply space-x-3 text-sm font-semibold ;
     }
     .nav{
-        @apply text-emerald-900 bg-white flex justify-between items-center py-3 md:py-1 uppercase;
+        @apply text-emerald-900 bg-white flex justify-between items-center py-3 md:py-1 uppercase sticky top-0;
     }
 }
