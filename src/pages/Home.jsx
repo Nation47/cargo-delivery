@@ -32,7 +32,7 @@ const Home = ({token}) => {
                     </div>
                     <h2 className="uppercase text-xs  md:ml-2 md:mt-2 text-emerald-800 font-semibold">{token.user.user_metadata.user}</h2>
                 </div>
-                <Suspense fallback={<p className="text-center">Loading Requests...</p>}>
+                <Suspense fallback={<Loading/>}>
                 <Received />
                 </Suspense>
             </div>
@@ -41,3 +41,7 @@ const Home = ({token}) => {
 }
  
 export default Home;
+
+function Loading(){
+    return <p className="text-black text-center">Loading Requests...</p>
+}
