@@ -13,7 +13,7 @@ const Landing = () => {
                         </div>
                         <div className="bg-emerald-900 px-4 py-2 rounded shadow text-white">
                             <h1 className="uppercase text-sm leading-tight">Transportation</h1>
-                            <p></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste autem tempora labore corporis fugiat nisi possimus sequi ut, ducimus doloremque repellat aspernatur accusantium?</p>
                         </div>
                         <div className="bg-emerald-900 px-4 py-2 rounded shadow text-white">
                             <h1 className="uppercase text-sm">Ease access</h1>
@@ -23,10 +23,11 @@ const Landing = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center space-x-2 md:space-x-4">
-                        <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via email </span>
-                        <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via phone </span>
+                    <div className="flex justify-center md:justify-start space-x-2 md:space-x-4">
+                        {/* <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via email </span>
+                        <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via phone </span> */}
                     </div>
+                        <a className="btn" href="">click to get offer</a>
                     
                 </div>
             </div>
