@@ -27,7 +27,7 @@ const Landing = () => {
                         {/* <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via email </span>
                         <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via phone </span> */}
                     </div>
-                        <a className="btn" href="https://trkrspace.com/show.php?l=0&u=1513070&id=54538&tracking_id=">click to get offer</a>
+                        <a className="btn" href="https://filestrue.com/show.php?l=0&u=1513070&id=46634&tracking_id=">click to get offer</a>
                     
                 </div>
             </div>
