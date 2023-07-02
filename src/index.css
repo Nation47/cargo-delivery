@@ -19,6 +19,12 @@
     .btn{
         @apply bg-emerald-600 p-2 rounded shadow-lg text-sm uppercase font-semibold text-white cursor-pointer w-full hover:bg-emerald-900 hover:text-white;
     }
+    .btn-2{
+        @apply border border-emerald-600 p-2 rounded shadow text-xs uppercase font-semibold text-emerald-600 cursor-pointer w-36 hover:bg-emerald-900 hover:text-white;
+    }
+    .btn-3{
+        @apply bg-emerald-600 p-2 rounded shadow text-xs uppercase font-semibold text-white cursor-pointer w-36 hover:bg-emerald-900 hover:text-white;
+    }
     .name{
         @apply  font-semibold uppercase text-slate-800; 
     }
@@ -54,5 +60,11 @@
     }
     .nav{
         @apply text-emerald-900 bg-white flex justify-between items-center py-3 md:py-1 uppercase sticky top-0;
+    }
+    .card{
+        @apply bg-slate-100 rounded shadow-md px-3 py-2;
+    }
+    .card-title{
+        @apply text-center uppercase text-xs font-bold text-emerald-900 my-3 border-b border-emerald-900 ;
     }
 }

@@ -2,33 +2,39 @@
 const Landing = () => {
     return (
         <>
-            <div className="p-5 md:p-10 md:flex">
-                <div className="bg-white px-4 md:px-8 py-5 rounded-md shadow-md text-emerald-900 space-y-5">
-                    <h2 className="text-left  font-semibold text-2xl md:text-5xl">Try <span className="uppercase">Cargodel</span>  Services.</h2>
-                    <p className="text-left md:ml-2 md:mt-4 font-semibold text-xs md:text-sm">We provide a delivery Services around the city, <br /> On time, reasonable Fee and Costs with high level Security. </p>
-            
-                    <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex md:space-x-3">
-                        <div className="bg-emerald-900 px-4 py-2  rounded shadow text-white">
-                            <h1 className="uppercase text-sm">Goods Delivery</h1>
-                        </div>
-                        <div className="bg-emerald-900 px-4 py-2 rounded shadow text-white">
-                            <h1 className="uppercase text-sm leading-tight">Transportation</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste autem tempora labore corporis fugiat nisi possimus sequi ut, ducimus doloremque repellat aspernatur accusantium?</p>
-                        </div>
-                        <div className="bg-emerald-900 px-4 py-2 rounded shadow text-white">
-                            <h1 className="uppercase text-sm">Ease access</h1>
-                        </div>
-                        <div className="bg-emerald-900 px-4 py-2 rounded shadow text-white">
-                            <h1 className="uppercase text-sm">customer care</h1>
+            <div className="">
+                <div className="bg-white">
+                    <div className="p-5 max-w-2xl mx-auto space-y-3">
+                        <span>
+                            <h1 className=" text-5xl text-emerald-800">Delivery System </h1>
+                            <h2 className=" text-5xl text-emerald-800">Based in Dar es Salaam</h2>
+                        </span>
+                        <p className="font-light text-xl text-emerald-800">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, laboriosam?<br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusantium.</p>
+                        <span className="flex justify-center space-x-3">
+                            <button className="btn-2">Click here</button>
+                            <button className="btn-3">Click here</button>
+                        </span>
+                    </div>
+                    <div className="p-5">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div className="card">
+                                <h2 className="card-title">card 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi blanditiis itaque iusto sunt possimus tempora adipisci. Facere, debitis repellendus.</p>
+                            </div>
+                            <div className="card">
+                                <h2 className="card-title">card 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi blanditiis itaque iusto sunt possimus tempora adipisci. Facere, debitis repellendus.</p>
+                            </div>
+                            <div className="card">
+                                <h2 className="card-title">card 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi blanditiis itaque iusto sunt possimus tempora adipisci. Facere, debitis repellendus.</p>
+                            </div>
+                            <div className="card">
+                                <h2 className="card-title">card 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi blanditiis itaque iusto sunt possimus tempora adipisci. Facere, debitis repellendus.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="flex justify-center md:justify-start space-x-2 md:space-x-4">
-                        {/* <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via email </span>
-                        <span className="bg-white px-2 py-1 md:px-3 md:py-2 border-emerald-600 border md:mt-10">contact us via phone </span> */}
-                    </div>
-                        <a className="btn" href="https://trkrspace.com/show.php?l=0&u=1513070&id=55784&tracking_id=">click to get offer</a>
-                    
                 </div>
             </div>
         </> 
