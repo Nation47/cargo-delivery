@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import {FaRegUser} from "react-icons/fa"
 import {BiLogOut} from "react-icons/bi"
 import Received from "../components/Received";
+import { Suspense } from "react";
 
 const Home = ({token}) => {
    const navigate = useNavigate();
@@ -31,10 +32,16 @@ const Home = ({token}) => {
                     </div>
                     <h2 className="uppercase text-xs  md:ml-2 md:mt-2 text-emerald-800 font-semibold">{token.user.user_metadata.user}</h2>
                 </div>
+                <Suspense fallback={<Loading/>}>
                 <Received />
+                </Suspense>
             </div>
         </>
     );
 }
  
 export default Home;
+
+function Loading(){
+    return <p className="text-black text-center">Loading Requests...</p>
+}
